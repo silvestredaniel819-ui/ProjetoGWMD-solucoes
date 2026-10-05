@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- alinhamento da marca -->
+            <div class="logo">
+                <strong>GWMD</strong>
+                <span>Soluções</span>
+            </div>
+            <nav>
+                <!-- links das páginas -->
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="login.html">Login/Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- conteúdo principal da página de contato -->
+    <main class="pagina-contato">
+        <div class="container-pagina">
+            
+            <!-- cabeçalho do bloco de contato -->
+            <section class="contato-hero">
+                <p class="eyebrow">Fale Conosco</p>
+                <h1>Vamos conversar sobre o seu projeto</h1>
+                <p class="subtitle">
+                    Preencha o formulário abaixo ou utilize nossos canais diretos para solicitar uma análise da sua operação.
+                </p>
+            </section>
+
+            <!-- formulário e dados de atendimento lado a lado -->
+            <section class="bloco-contato">
+                
+                <!-- formulário para o cliente enviar mensagem -->
+                <article class="formulario-contato">
+                    <h2>Envie uma mensagem</h2>
+                    <form action="#" method="POST">
+                        
+                        <!-- campo nome -->
+                        <div class="campo">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+
+                        <!-- campo email -->
+                        <div class="campo">
+                            <label for="email">E-mail corporativo:</label>
+                            <input type="email" id="email" name="email" placeholder="seu.email@empresa.com" required>
+                        </div>
+
+                        <!-- campo telefone -->
+                        <div class="campo">
+                            <label for="telefone">Telefone / WhatsApp:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(81) 99999-9999" required>
+                        </div>
+
+                        <!-- assunto do contato -->
+                        <div class="campo">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="analise">Análise de Dados</option>
+                                <option value="automacao">Automação de Processos</option>
+                                <option value="treinamento">Treinamentos Corporativos</option>
+                                <option value="sistema">Sistemas sob Medida</option>
+                                <option value="outro">Outros Assuntos</option>
+                            </select>
+                        </div>
+
+                        <!-- mensagem detalhada -->
+                        <div class="campo">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente a sua necessidade..." required></textarea>
+                        </div>
+
+                        <!-- botão de envio -->
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </article>
+
+                <!-- informações de atendimento -->
+                <article class="informacoes-contato">
+                    <h2>Canais Diretos</h2>
+                    
+                    <div class="item-info">
+                        <h3>Telefone</h3>
+                        <p>(81) 6767-1501</p>
+                    </div>
+
+                    <div class="item-info">
+                        <h3>E-mail</h3>
+                        <p>contato@gwmd.com.br</p>
+                    </div>
+
+                    <div class="item-info">
+                        <h3>Endereço</h3>
+                        <p>Recife — PE</p>
+                    </div>
+
+                    <div class="item-info">
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 08:00 às 18:00</p>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- rodapé padrão do projeto -->
+    <footer>
+        <div class="container">
+            <p><strong>GWMD Soluções</strong> — Gestão • Web • Machine Learning • Meta Data</p>
+            <p>(81) 6767-1501 | contato@gwmd.com.br | Recife — PE</p>
+            <p>&copy; 2026 GWMD Soluções</p>
+        </div>
+    </footer>
+</body>
+</html>

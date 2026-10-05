@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Cadastro - GWMD Soluções</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <div class="logo">
+                <strong>GWMD</strong>
+                <span>Soluções</span>
+            </div>
+            <nav>
+    
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="area-login">
+        <div class="container-pagina">
+            <section class="card-login">
+                <h2>Acesso ao Sistema</h2>
+                <p>Digite suas credenciais para acessar o painel de dados.</p>
+
+                <!-- formulário cru que tive que aprendi a fazer dps de 3 hrs de Yt-->
+                <form action="dashboard.html" method="get">
+                    
+                    <!-- campo do e-mail/senha e tals -->
+                    <div class="campo">
+                        <label for="email">E-mail corporativo:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.nome@empresa.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="opcoes-login">
+                        <label>
+                            <input type="checkbox" name="lembrar"> Lembrar meu acesso
+                        </label>
+                        <br>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <!-- botão de confirmação -->
+                    <button type="submit">Entrar no Painel</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- rodapé do site -->
+    <footer>
+        <div class="container">
+            <p><strong>GWMD Soluções</strong> — Gestão • Web • Machine Learning • Meta Data</p>
+            <p>(81) 6767-1501 | contato@gwmd.com.br | Recife — PE</p>
+            <p>&copy; 2026 GWMD Soluções</p>
+        </div>
+    </footer>
+</body>
+</html>
