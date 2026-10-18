@@ -1,0 +1,51 @@
+/*  LOGIN  */
+.area-login {
+    padding: 64px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.area-login .container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-login {
+    width: 100%;
+    max-width: 440px;
+    border-top-color: #d32f2f;
+}
+
+.card-login h2 {
+    margin-bottom: 8px;
+}
+
+.card-login > p {
+    color: #5a6570;
+    margin-bottom: 24px;
+}
+
+.card-login form {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.opcoes-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.opcoes-login a {
+    color: #d32f2f;
+    font-weight: 500;
+}
+
+.card-login button {
+    width: 100%;
+}

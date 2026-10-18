@@ -1,0 +1,39 @@
+/*  PRODUTOS  */
+.produtos-hero {
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+.card-produto ul {
+    margin: 12px 0 20px;
+    padding-left: 18px;
+    list-style: disc;
+    color: #5a6570;
+}
+
+.card-produto li {
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+}
+
+.card-produto > a {
+    display: inline-flex;
+    background: #d32f2f;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.card-produto > a:hover {
+    background: #b71c1c;
+    color: #fff;
+}

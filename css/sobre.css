@@ -1,0 +1,23 @@
+/*  SOBRE  */
+.sobre-hero {
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+
+.filosofia {
+    padding: 24px 0 40px;
+}
+
+.filosofia > h2 {
+    margin-bottom: 20px;
+}
+
+.filosofia .pilar {
+    margin-bottom: 16px;
+}
+
+.missao-visao {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 32px;}
