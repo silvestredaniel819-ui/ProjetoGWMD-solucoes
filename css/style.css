@@ -43,8 +43,8 @@ p { margin-bottom: 0.75rem; }
 /*  container  */
 .container {
     background-image: url("../img/minervaebode.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: stop right;
 }
 .container-pagina {
     width: 100%;
@@ -116,12 +116,10 @@ nav a:hover { color: #fff; }
     border-radius: 8px;
     font-weight: 600;
 }
-
 .btn-nav:hover {
     background: #b71c1c;
     color: #fff !important;
 }
-
 /*  botões  */
 .btn,
 button,
@@ -141,7 +139,6 @@ input[type="submit"] {
     text-decoration: none;
     transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .btn:hover,
 button:hover {
     background: #b71c1c;
@@ -149,33 +146,28 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(211, 47, 47, 0.35);
 }
-
 .btn-outline {
     background: transparent;
     color: #fff;
     border: 2px solid rgba(255, 255, 255, 0.7);
 }
-
 .btn-outline:hover {
     background: #fff;
     color: #0a192f;
     border-color: #fff;
     box-shadow: none;
 }
-
 /*  grids  */
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-
 /*  cards das paginas  */
 .card,
 .card-produto,
@@ -191,7 +183,6 @@ button:hover {
     border-top: 4px solid #0a192f;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .card:hover,
 .card-produto:hover,
 .card-metrica:hover,
@@ -200,12 +191,10 @@ button:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 28px rgba(10, 25, 47, 0.12);
 }
-
 .card-produto,
 .card-metrica {
     border-top-color: #d32f2f;
 }
-
 .card-label,
 .codigo-produto {
     color: #d32f2f;
@@ -215,7 +204,6 @@ button:hover {
     text-transform: uppercase;
     margin-bottom: 8px;
 }
-
 /*  textos auxiliares  */
 .eyebrow {
     color: #d32f2f;
@@ -225,14 +213,12 @@ button:hover {
     text-transform: uppercase;
     margin-bottom: 12px;
 }
-
 .subtitle {
     max-width: 640px;
     color: #5a6570;
     font-size: 1.05rem;
     margin-bottom: 24px;
 }
-
 .etapas-line {
     margin-top: 24px;
     color: #5a6570;
@@ -240,40 +226,33 @@ button:hover {
     font-weight: 600;
     letter-spacing: 0.06em;
 }
-
 section {
     padding: 48px 0;
 }
-
-/* home */
+/* indentidade da empresa */
 .identidade {
     background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
     color: #fff;
     padding: 72px 0;
 }
-
 .identidade h1 {
     color: #fff;
     font-size: 2.5rem;
     max-width: 720px;
 }
-
 .identidade .subtitle,
 .identidade p {
     color: rgba(255, 255, 255, 0.85);
 }
-
 .identidade .eyebrow {
     color: #ff8a80;
 }
-
 .acoes-identidade {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 8px;
 }
-
 .legado,
 .servicos,
 .metodologia {
@@ -288,15 +267,12 @@ footer {
     font-size: 0.9rem;
     margin-top: 48px;
 }
-
 footer strong { color: #fff; }
 footer p { margin-bottom: 6px; }
-
 /*  formulários .campo  */
 .campo {
     margin-bottom: 18px;
 }
-
 .campo label {
     display: block;
     font-size: 0.9rem;
@@ -304,7 +280,6 @@ footer p { margin-bottom: 6px; }
     color: #0a192f;
     margin-bottom: 6px;
 }
-
 .campo input,
 .campo select,
 .campo textarea {
@@ -319,12 +294,10 @@ footer p { margin-bottom: 6px; }
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
 .campo textarea {
     min-height: 120px;
     resize: vertical;
 }
-
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
@@ -338,26 +311,21 @@ footer p { margin-bottom: 6px; }
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 768px) {
     h1 { font-size: 1.7rem; }
     h2 { font-size: 1.35rem; }
-
     header .container {
      flex-direction: column;
     align-items: flex-start;
     padding-top: 16px;
     padding-bottom: 16px;
     }
-
     nav ul {
     width: 100%;
     gap: 8px 12px;
     }
-
     .identidade { padding: 48px 0; }
     .identidade h1 { font-size: 1.8rem; }
-
     .grid-2,
     .grid-4,
     .lista-produtos,
@@ -366,11 +334,19 @@ footer p { margin-bottom: 6px; }
     .metricas-grid {
     grid-template-columns: 1fr;
     }
-
     table {
     display: block;
     overflow-x: auto;
     }
-
-    section { padding: 36px 0; }
+section { padding: 36px 0; }
+}
+/* botão de contato que acabou desconfigurando o css*/
+.bt-cta {
+    display: inline-flex;
+    align-items: left;
+    background: #d32f2f;
+    color: #fff !important;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
 }
